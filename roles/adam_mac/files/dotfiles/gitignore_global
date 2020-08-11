@@ -17,8 +17,10 @@ Thumbs.db
 ################
 *.pyc
 .pycache
+.python-version
 .tox
-
+pip-wheel-metadata
+venv
 
 # Sublime stuff #
 #################

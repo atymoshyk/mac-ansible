@@ -8,19 +8,19 @@
   - ipython/profile_default
   - ipython/profile_default/startup
   - config
-  - config/karabiner
   - config/yamllint
 
-- file:
+- name: dotfiles links
+  file:
     src: '{{ ansible_env.PWD }}/roles/adam_mac/files/dotfiles/{{ item }}'
     path: '~/.{{ item }}'
     state: link
   loop:
-  - config/karabiner/karabiner.json
+  - config/karabiner
   - config/yamllint/config
   - gitconfig
   - gitignore_global
-  - python_startup
+  - mrconfig
   - ssh/config
   - ansible.cfg
   - ipython/profile_default/startup/00-imports.py
